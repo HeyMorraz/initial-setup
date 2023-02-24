@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: #393D5E;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.card{
+    /* display: grid;
+   gap: 10px;
+   grid-template-areas: 
+      "card__form   container__colors"; */
+    /* display: grid;
+    justify-content: center;
+    position: relative; */
+    position: relative;
+   width: 70%;
+   height: 90%;
+   background: #1D203E;
+   color: #fff;
+   box-sizing: border-box;
+   padding: 20px 15px;
+   border-radius: 10px;
+   
+   
+    
+}
+.card__form{
+    width: 90%;
+}
+.card__title{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card__labels{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+    font-family: sans-serif;
+}
+.card__inputs{
+    width: 50%;
+    height: 25px;
+    outline: none;
+    border: solid;
+    border-width: 0.1px;
+    border-radius: 3px;
+    border-color: #4a4a4a;
+    background: #3b3d535e;
+    padding: 18px 15px;
+    color: white;
+}
+.card__cards .card__labels{
+    margin: 5px 0;
+
+}
+.card__save{
+    width: 110%;
+    background-image: linear-gradient(90deg,#F7CBFD 5% ,#7758D1 60%);
+    color: blanchedalmond;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 3px ;
+    padding: 10px 15px;
+    margin: 10px;
+}
+
+.container__labels{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+    font-family: sans-serif;
+}
+.container__inputs{
+    
+    width: 50%;
+    height: 25px;
+    outline: none;
+    border: solid;
+    border-width: 0.1px;
+    border-radius: 3px;
+    border-color: #4a4a4a;
+    background: #3b3d535e;
+    padding: 18px 15px;
+    color: white;
+}
+.container__colors{
+   position: absolute;
+   left: 60%;
+   right: 40%;
+   bottom: 40%;
+}
+.container__colors{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+/* .card__form{
+    grid-area:card__form ;
+}
+.container__colors{
+    grid-area: container__colors;
+   
+} */

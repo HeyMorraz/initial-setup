@@ -4,7 +4,115 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>initial-setup</title>
   </head>
-  <body></body>
+  <body>
+    <div class="card">
+      <h1 class="card__title">Configuracion Inicial</h1>
+      <form class="card__form">
+        <div class="card__name card__cards">
+          <label class="card__username card__labels" for="Nombre Usuario"
+            >Nombre Usuario:</label
+          >
+          <input class="card__input-name card__inputs" type="text" />
+        </div>
+
+        <div class="card__password card__cards">
+          <label class="card__label-password card__labels" for="Contraseña"
+            >Contraseña:</label
+          >
+          <input class="card__input-password card__inputs" type="text" />
+        </div>
+
+        <div class="card__confirm-password card__cards">
+          <label class="card__label-confirm card__labels" for="Nombre Usuario"
+            >Confirmar Contraseña:</label
+          >
+          <input
+            class="card__input-confirm-password card__inputs"
+            type="text"
+          />
+        </div>
+
+        <div class="card__company-name card__cards">
+          <label
+            class="card__label-company-name card__labels"
+            for="Nombre Usuario"
+            >Nombre Empresa:</label
+          >
+          <input class="card__input-company-name card__inputs" type="text" />
+        </div>
+        <input
+          class="card__save"
+          type="submit"
+          value="Guardar Configuración"
+          placeholder="Guardar Configuración"
+        />
+      </form>
+      <div class="container">
+        <form class="container__colors">
+          <div class="container__main-color container__containers">
+            <label
+              class="container__label-main container__labels"
+              for="Color Secundario"
+              >Color Principal:</label
+            >
+            <input
+              class="container__input-main container__inputs"
+              type="color"
+            />
+          </div>
+
+          <div class="container__secondary-color container__containers">
+            <label
+              class="container__label-secondary container__labels"
+              for="Color Secundario"
+              >Color Secundario:</label
+            >
+            <input
+              class="container__input-secondary container__inputs"
+              type="color"
+            />
+          </div>
+
+          <div class="container__buttons-color container__containers">
+            <label
+              class="container__label-buttons container__labels"
+              for="Color Botones"
+              >Color Botones:</label
+            >
+            <input
+              class="container__input-buttons container__inputs"
+              type="color"
+            />
+          </div>
+
+          <div class="container__font-color container__containers">
+            <label
+              class="container__label-font container__labels"
+              for="Color Fuente"
+              >Color Fuente:</label
+            >
+            <input
+              class="container__input-font container__inputs"
+              type="color"
+            />
+          </div>
+
+          <div class="container__company-logo container__containers">
+            <label
+              class="container__label-logo container__labels"
+              for="Seleccione logo empresa"
+              >Seleccione Logo Empresa:</label
+            >
+            <input
+              class="container__input-logo container__inputs"
+              type="image"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
