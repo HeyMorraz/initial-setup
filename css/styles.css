@@ -10,27 +10,17 @@ body{
     height: 100vh;
 }
 .card{
-    /* display: grid;
-   gap: 10px;
-   grid-template-areas: 
-      "card__form   container__colors"; */
-    /* display: grid;
-    justify-content: center;
-    position: relative; */
-    position: relative;
-   width: 70%;
+   display: grid;
+   place-items: center;
    height: 90%;
    background: #1D203E;
    color: #fff;
    box-sizing: border-box;
    padding: 20px 15px;
-   border-radius: 10px;
-   
-   
-    
+   border-radius: 10px;   
 }
 .card__form{
-    width: 90%;
+ 
 }
 .card__title{
     margin: 0;
@@ -48,7 +38,7 @@ body{
     font-family: sans-serif;
 }
 .card__inputs{
-    width: 50%;
+    width: 100%;
     height: 25px;
     outline: none;
     border: solid;
@@ -63,8 +53,32 @@ body{
     margin: 5px 0;
 
 }
+.card__confirm-password{
+ position: relative;
+}
+#card__icon{
+   position: absolute;
+   left: 85%;
+   top: 63%;
+    background: #3b3d535e;
+    opacity: .4;
+}
+.card__password{
+   position: relative;
+}
+#card__icon-1{
+    position: absolute;
+   left: 85%;
+   top: 63%;
+    background: #3b3d535e;
+    opacity: .4;
+}
+
+.container__containers .container__labels{
+    margin: 9px 0;
+}
 .card__save{
-    width: 110%;
+    width: 100%;
     background-image: linear-gradient(90deg,#F7CBFD 5% ,#7758D1 60%);
     color: blanchedalmond;
     cursor: pointer;
@@ -72,7 +86,8 @@ body{
     outline: none;
     border-radius: 3px ;
     padding: 10px 15px;
-    margin: 10px;
+    margin: 10px 0;
+   
 }
 
 .container__labels{
@@ -84,33 +99,59 @@ body{
     font-family: sans-serif;
 }
 .container__inputs{
-    
-    width: 50%;
-    height: 25px;
+    width: 100%;
+    height: 35px;
     outline: none;
     border: solid;
     border-width: 0.1px;
     border-radius: 3px;
     border-color: #4a4a4a;
     background: #3b3d535e;
-    padding: 18px 15px;
-    color: white;
+}
+.container__input-logo {
+    display: none;  
 }
 .container__colors{
-   position: absolute;
-   left: 60%;
-   right: 40%;
-   bottom: 40%;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 5%;
 }
-.container__colors{
+.container__logo{
+    width: 100px;
+    height: 100px;
+}
+.container__img{
     display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    border: 1px solid #4a4a4a;
 }
-/* .card__form{
-    grid-area:card__form ;
+
+.card__subContainer{
+    display: flex;
+    gap: 15%;
 }
-.container__colors{
-    grid-area: container__colors;
-   
-} */
+
+@media (max-width: 600px){
+    .card{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+}
+@media (min-width: 600px){
+    .card{
+        flex-direction: column;
+        align-items: center;
+        width: 55%;
+        height: 400px;
+        
+    }
+}
+@media (min-width: 1000px){
+    .card{
+        width: 500px;
+        height: 500px;
+    }
+}
+
